@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--link al css de Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+    <!--link al CSS-->
+    <link rel="stylesheet" href="../main.css">
+    <title>About Me</title>
+</head>
+
+<div class="webContent">
+    <body class="bodyAboutMe">
+        <!--navegador-->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent container-fluid fixed-top">
+                <div class="container-fluid w-100">
+
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav justify-content-around">
+                            <li class="nav-item">
+                                <a class="nav-link color-red p-0" aria-current="page" href="aboutme.html">ABOUT ME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-red p-0" href="milestones.html">MILESTONES</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a class="navbar-brand w-50 d-flex justify-content-center"  href="../index.html"><img class="custom-width-logo-nav" id="logo" src="../public/logo1.png" alt="logo 1"></a>
+
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ff0000" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav justify-content-around">
+                            <li class="nav-item">
+                                <a class="nav-link color-red p-0" href="fashion.html">FASHION</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-red p-0" href="graphic.html">GRAPHIC</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-red p-0" href="">METAVERSE</a>
+                            </li>
+                        </ul>
+                  </div>
+                </div>
+              </nav>
+
+        </header>
+
+        <main class="aboutMe">
+            
+            <section class="aboutMeSection">
+                <img class="aboutPhoto" src="../public/IMG_8743.png" alt="Foto Pablo">
+                <div class="aboutText">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis arcu eu congue posuere. Integer eu dictum sem. Integer rhoncus vehicula nibh ac porta. Donec eget dapibus libero. Duis dictum molestie lacinia. Pellentesque erat libero, elementum eu neque sed, dictum maximus elit. Integer tincidunt eget eros at interdum. Nulla dolor est, maximus eu aliquam eget, mollis non mi. Etiam viverra augue orci, at imperdiet elit mattis ut. Donec pellentesque sodales est, at rutrum ligula tincidunt sed.
+                        
+                        Nulla consequat sit amet turpis eget gravida. Fusce eget imperdiet nunc. Cras facilisis lectus semper magna consectetur tempor. Nulla facilisi. Nam semper sodales urna non luctus. Mauris efficitur vitae velit in consectetur. Phasellus vel risus sollicitudin, luctus sem nec, gravida tellus. Fusce non mauris lorem. Ut imperdiet venenatis libero at eleifend. Integer pretium massa sit amet ante dapibus cursus. Vivamus aliquet scelerisque congue. Curabitur fringilla enim vel velit viverra accumsan.
+                    </p>
+                </div>
+
+            </section>
+
+ 
+            <!--Boton hidden info-->
+            <p class="aboutButton">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                    SOCIAL NETWORKS
+                </button>
+            </p>
+            <div class="aboutButtonExpanded" style="min-height: 120px;">
+                <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                    <div class="card card-body" style="width: 300px;">
+                        <a class="socialLink" href="https://www.instagram.com/pablo____pez/" target="_blank">INSTAGRAM</a>
+                    </div>
+                </div>
+            </div>   
+        </main>
+
+        <!--footer-->
+        <footer class="container-fluid">
+            <div class="row footer-form">
+
+                <form class="formComplete" action="">
+
+                    <p class="text-center my-1 knowMore">WANT TO KNOW MORE?</p>
+
+                    <div class="footer-form-padding formName">
+                        <label for="">NAME</label>
+                        <input type="text">
+                    </div>
+                    
+                    <div class="footer-form-padding formEmail">
+                        <label for="">EMAIL</label>
+                        <input type="text">
+                    </div>
+
+                    <input class="footer-form-padding formSend" type="button" value="SEND">
+                </form>
+
+            </div>
+            
+            <div class="row footer-form-padding">
+                <div class="col">
+                    <span>COPYRIGHT © 2022 PABLO LOPEZ GARCIA<span>
+                </div>
+            </div>
+
+        </footer> 
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</div>
+</html>
