@@ -34,9 +34,6 @@ header{
     justify-content: center;
     align-items: center;
 }
-.index img{
-    width: 100vw;
-}
 /*Propiedades del nav*/
 .color-red{
     color: #ff0000 !important;
@@ -77,6 +74,15 @@ header{
 }
 /*Propiedadesd del main*/
 main{
+    width: 100vw;
+
+    padding: 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.index img{
     width: 100vw;
 }
 /*Propiedadesd del main About Me*/
@@ -156,7 +162,13 @@ main.milestones{
     border-color: rgb(232, 245, 212);
     box-shadow: 0 0 0 0.25rem rgb(173 255 57 / 50%);
 }
+.accordion-button:not(.collapsed)::after {
+    filter: invert(11%) sepia(93%) saturate(5528%) hue-rotate(4deg) brightness(111%) contrast(123%);
+}
 /*Propiedades del mainFashion*/
+.fashion{
+    margin: 100px 0px 0px 0px;
+}
 section{
     display: flex;
     flex-direction: column;
@@ -192,7 +204,7 @@ div.groupPhoto img{
     min-width: 33.4vw;  
 }
 /*Propiedades del mainGraphic*/
-main.graphic {
+.graphic {
     text-align: center;
 
     display: flex;
@@ -237,6 +249,15 @@ footer{
     }
     nav ul{
         width: 30vw;
+    }
+    .navContentLeft{
+        order: 1;
+    }
+    .navContentCenter{
+        order: 2;
+    }
+    .navContentRight{
+        order: 3;
     }
 /*Body Index responsive 768px*/
     .index img{
@@ -289,6 +310,9 @@ main.graphic p{
     margin: 40px 0px 60px;
 }
 /*Main Fashion responsive 768px*/
+    .fashion{
+        margin: 200px 0px 0px 0px;
+    }
     .fashionProjectText{
         padding: 30px;
         max-width: 70vw;
