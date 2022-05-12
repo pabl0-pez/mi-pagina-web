@@ -1,0 +1,75 @@
+//Colores//
+$color-primary: hwb(0 0% 0%);
+$color-secondary: hwb(84 18% 0%);
+$color-tertiary: hwb(0 100% 0%);
+
+//Spacing//
+$spacing: 5px;
+$paddingMain: 100px 0px 45px;
+
+/*Fonts*/
+$main-font: Manrope, Arial, Helvetica, sans-serif;
+$font-sizes:(
+    smallest: 0.25rem,
+    small: 0.5rem,
+    medium: 0.75rem,
+    regular: 1rem,
+    large: 2rem,
+    giant: 4rem,
+);
+@each $size, $rem in $font-sizes{
+    .fontSize-#{$size}{
+        font-size: $rem;
+    }
+}
+
+$font-weights:(
+    extraLight: 200,
+    light: 300,
+    regular: 400,
+    medium: 500,
+    semiBold: 600,
+    Bold: 700,
+    extraBold: 800,
+);
+@each $weight, $a in $font-weights{
+    .fontWeight-#{$weight}{
+        font-weight: $a;
+    }
+}
+
+/*Propiedades de los links*/
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    color: $color-primary;
+}
+/*Propiedades de los botones*/
+/*Sobrescriben Bootstrap*/
+.btn-primary{
+    background-color: $color-primary;
+    border-color: $color-primary;
+    &:active{
+        @extend .btn-primary; 
+        &:focus{
+            box-shadow: 0 0 0 0.25rem rgba(171, 255, 46, 0.5);
+        }
+    }
+    &:focus{
+        @extend .btn-primary;
+        box-shadow: 0 0 0 0.25rem rgba(171, 255, 46, 0.5);
+    }
+    &:hover{
+        background-color: $color-secondary;
+        border-color: $color-secondary;
+        color: $color-primary;
+    }
+}
+.socialLink{
+    text-align: center;
+}
+div.card{
+    border-color: $color-primary;
+}
+

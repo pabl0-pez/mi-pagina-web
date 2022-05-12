@@ -1,0 +1,312 @@
+@charset "UTF-8";
+/*Fonts*/
+.fontSize-smallest {
+  font-size: 0.25rem; }
+
+.fontSize-small {
+  font-size: 0.5rem; }
+
+.fontSize-medium {
+  font-size: 0.75rem; }
+
+.fontSize-regular {
+  font-size: 1rem; }
+
+.fontSize-large {
+  font-size: 2rem; }
+
+.fontSize-giant {
+  font-size: 4rem; }
+
+.fontWeight-extraLight {
+  font-weight: 200; }
+
+.fontWeight-light {
+  font-weight: 300; }
+
+.fontWeight-regular {
+  font-weight: 400; }
+
+.fontWeight-medium {
+  font-weight: 500; }
+
+.fontWeight-semiBold {
+  font-weight: 600; }
+
+.fontWeight-Bold {
+  font-weight: 700; }
+
+.fontWeight-extraBold {
+  font-weight: 800; }
+
+/*Propiedades de los links*/
+a:link {
+  text-decoration: none; }
+
+a:visited {
+  color: hwb(0 0% 0%); }
+
+/*Propiedades de los botones*/
+/*Sobrescriben Bootstrap*/
+.btn-primary, .btn-primary:active, .btn-primary:focus {
+  background-color: hwb(0 0% 0%);
+  border-color: hwb(0 0% 0%); }
+  .btn-primary:active:focus {
+    box-shadow: 0 0 0 0.25rem rgba(171, 255, 46, 0.5); }
+  .btn-primary:focus {
+    box-shadow: 0 0 0 0.25rem rgba(171, 255, 46, 0.5); }
+  .btn-primary:hover {
+    background-color: hwb(84 18% 0%);
+    border-color: hwb(84 18% 0%);
+    color: hwb(0 0% 0%); }
+
+.socialLink {
+  text-align: center; }
+
+div.card {
+  border-color: hwb(0 0% 0%); }
+
+/*Transiciones*/
+#logo {
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; }
+  #logo:hover {
+    transform: scale(1.1); }
+
+/*Animaciones*/
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(10deg); }
+  75% {
+    transform: rotate(-10deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+#mainImage {
+  padding: 100px 0px 45px;
+  animation-name: rotate;
+  animation-iteration-count: 3;
+  animation-timing-function: ease;
+  animation-duration: 3s; }
+
+/*Propiedades del body*/
+body, .bodyIndex, .bodyAboutMe, .bodyMilestones {
+  padding: 0;
+  margin: 0;
+  background-color: hwb(0 100% 0%);
+  color: hwb(0 0% 0%);
+  font-family: Manrope, Arial, Helvetica, sans-serif; }
+
+.bodyIndex, .bodyAboutMe, .bodyMilestones {
+  background-image: url(../public/STARS-BACKGROUNDSTARS-BACKGROUND.gif);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+/*Propiedades del header*/
+header {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+/*Propiedades del nav*/
+/*Sobreescriben el Bootsrap*/
+.color-red {
+  color: hwb(0 0% 0%) !important; }
+
+.custom-width-logo-nav {
+  width: 40vw !important; }
+
+/*Propiedades del footer*/
+footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  footer .formComplete {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  footer .footer-form-padding {
+    padding: 5px; }
+
+/*Acá empieza el responsive desde 768px*/
+@media screen and (min-width: 768px) {
+  /*Nav responsive*/
+  .custom-width-logo-nav {
+    width: 14vw !important; }
+  nav ul {
+    width: 30vw; }
+  .navContentLeft {
+    order: 1; }
+  .navContentCenter {
+    order: 2; }
+  .navContentRight {
+    order: 3; }
+  /*Body Milestones responsive 768px*/
+  .bodyMilestones {
+    background-image: url("../public/alien.png");
+    background-size: 500px;
+    background-repeat: repeat; }
+  /*Main Index responsive 768px*/
+  main.index {
+    margin: 60px 0px 0px 0px; }
+    main.index img {
+      width: 60vw; }
+  /*Main About Me*/
+  main.aboutMe .aboutMeSection {
+    margin: 40px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-evenly; }
+    main.aboutMe .aboutMeSection #aboutPhoto {
+      width: 30vw; }
+    main.aboutMe .aboutMeSection .aboutText p {
+      max-width: 50vw; }
+  /*Boton About*/
+  .aboutButton {
+    margin: 40px; }
+  /*Main Milestones responsive 768px*/
+  main.milestones {
+    margin: 80px 0px; }
+  /*Main Graphic responsive 768px*/
+  main.graphic {
+    margin: 0px; }
+    main.graphic h1 {
+      padding: 50px 50px 0px;
+      font-weight: 700;
+      font-size: 4rem; }
+    main.graphic p {
+      font-size: 1rem;
+      max-width: 90vw;
+      margin: 40px 0px 60px; }
+  /*Main Fashion responsive 768px*/
+  main.fashion {
+    margin: 80px 0px 0px 0px; }
+    main.fashion .fashionProjectText {
+      padding: 30px;
+      width: 70vw; }
+      main.fashion .fashionProjectText h1 {
+        font-size: 90px; }
+      main.fashion .fashionProjectText p {
+        margin: 0px;
+        font-size: 12px; }
+  /*Footer responsive 768px*/
+  footer {
+    flex-direction: row;
+    justify-content: space-evenly; }
+    footer .formComplete {
+      font-size: 1rem;
+      width: 70vw;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly; }
+      footer .formComplete .knowMore {
+        grid-area: knowMore; }
+      footer .formComplete .formName {
+        grid-area: formName; }
+      footer .formComplete .formEmail {
+        grid-area: formEmail; }
+      footer .formComplete .formSend {
+        grid-area: formSend; }
+    footer div .col span {
+      font-size: 1rem; } }
+
+/*Main Index*/
+main {
+  width: 100vw;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  main img {
+    margin: 50px 0px 0px 0px;
+    width: 100vw; }
+
+/*Main About Me*/
+main.aboutMe .aboutMeSection {
+  padding: 100px 0px 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+  main.aboutMe .aboutMeSection p {
+    padding: 20px;
+    max-width: 100vw;
+    text-align: justify; }
+  main.aboutMe .aboutMeSection img {
+    width: 80vw; }
+
+/*Main Milestones*/
+main.milestones {
+  padding: 100px 0px 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*Propiedades del acordion*/
+  /*Sobreescriben Bootsrap*/ }
+  main.milestones .highlightEvent {
+    margin: 0px; }
+  main.milestones .accordion {
+    padding: 100px 0px 45px; }
+  main.milestones .accordion-button {
+    color: hwb(0 0% 0%); }
+    main.milestones .accordion-button:not(.collapsed) {
+      color: hwb(0 0% 0%);
+      background-color: hwb(0 100% 0%);
+      box-shadow: inset 0 -1px 0 rgba(171, 255, 46, 0.5); }
+      main.milestones .accordion-button:not(.collapsed)::after {
+        filter: invert(11%) sepia(93%) saturate(5528%) hue-rotate(4deg) brightness(111%) contrast(123%); }
+    main.milestones .accordion-button:focus {
+      border-color: hwb(0 100% 0%);
+      box-shadow: 0 0 0 0.25rem rgba(171, 255, 46, 0.5); }
+
+/*Main Fashion*/
+main.fashion {
+  padding: 110px 0px 45px; }
+  main.fashion section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main.fashion section .fashionProjectText {
+      text-align: left;
+      margin: 40px;
+      max-width: 90vw;
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      main.fashion section .fashionProjectText h1 {
+        margin: 5px; }
+      main.fashion section .fashionProjectText p {
+        margin: 0px; }
+    main.fashion section div.singlePhoto img {
+      margin: 0px;
+      width: 100vw; }
+    main.fashion section div.groupPhoto {
+      max-width: 100vw;
+      display: flex;
+      justify-content: space-between; }
+      main.fashion section div.groupPhoto img {
+        margin: 0px;
+        min-width: 33.4vw; }
+
+/*Main Graphic*/
+main.graphic {
+  padding: 35px 0px 45px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  main.graphic .text {
+    padding: 20px; }

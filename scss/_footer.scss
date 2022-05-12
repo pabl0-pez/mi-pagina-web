@@ -1,0 +1,17 @@
+/*Propiedades del footer*/
+footer{
+    padding: $spacing*4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .formComplete{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-form-padding{
+        padding: 5px;
+    }
+}

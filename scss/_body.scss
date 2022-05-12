@@ -1,0 +1,18 @@
+/*Propiedades del body*/
+
+body{
+    padding: 0;
+    margin: 0;
+
+    background-color: $color-tertiary;
+    color: $color-primary;
+    font-family: $main-font;
+}
+.bodyIndex, .bodyAboutMe, .bodyMilestones{
+    @extend body;
+    background-image: url(../public/STARS-BACKGROUNDSTARS-BACKGROUND.gif);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
