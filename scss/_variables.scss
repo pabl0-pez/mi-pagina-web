@@ -39,11 +39,13 @@ $font-weights:(
 }
 
 /*Propiedades de los links*/
-a:link{
-    text-decoration: none;
-}
-a:visited{
-    color: $color-primary;
+@mixin links{
+    a:link{
+        text-decoration: none;
+    }
+    a:visited{
+        color: $color-primary;
+    }
 }
 /*Propiedades de los botones*/
 /*Sobrescriben Bootstrap*/

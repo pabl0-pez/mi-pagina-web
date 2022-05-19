@@ -1,4 +1,7 @@
 /*Propiedades del nav*/
+nav{
+    @include links;
+}
 /*Sobreescriben el Bootsrap*/
 .color-red{
     color: $color-primary !important;

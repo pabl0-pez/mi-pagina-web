@@ -40,12 +40,6 @@
   font-weight: 800; }
 
 /*Propiedades de los links*/
-a:link {
-  text-decoration: none; }
-
-a:visited {
-  color: hwb(0 0% 0%); }
-
 /*Propiedades de los botones*/
 /*Sobrescriben Bootstrap*/
 .btn-primary, .btn-primary:active, .btn-primary:focus {
@@ -116,6 +110,12 @@ header {
   align-items: center; }
 
 /*Propiedades del nav*/
+nav a:link {
+  text-decoration: none; }
+
+nav a:visited {
+  color: hwb(0 0% 0%); }
+
 /*Sobreescriben el Bootsrap*/
 .color-red {
   color: hwb(0 0% 0%) !important; }
