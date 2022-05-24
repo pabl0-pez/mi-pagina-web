@@ -116,6 +116,9 @@ nav a:link {
 nav a:visited {
   color: hwb(0 0% 0%); }
 
+nav #navbarNav {
+  background-color: hwb(0 100% 0%); }
+
 /*Sobreescriben el Bootsrap*/
 .color-red {
   color: hwb(0 0% 0%) !important; }
@@ -134,6 +137,15 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    footer .formComplete .formSend {
+      background-color: hwb(0 0% 0%);
+      border-style: none;
+      border-radius: 5em;
+      color: hwb(84 18% 0%); }
+  footer a {
+    text-decoration: none !important;
+    color: hwb(0 0% 0%);
+    padding: 10px 0px 5px; }
   footer .footer-form-padding {
     padding: 5px; }
 
@@ -141,15 +153,7 @@ footer {
 @media screen and (min-width: 768px) {
   /*Nav responsive*/
   .custom-width-logo-nav {
-    width: 14vw !important; }
-  nav ul {
-    width: 30vw; }
-  .navContentLeft {
-    order: 1; }
-  .navContentCenter {
-    order: 2; }
-  .navContentRight {
-    order: 3; }
+    width: 30vw !important; }
   /*Body Milestones responsive 768px*/
   .bodyMilestones {
     background-image: url("../public/alien.png");
@@ -162,7 +166,7 @@ footer {
       width: 60vw; }
   /*Main About Me*/
   main.aboutMe .aboutMeSection {
-    margin: 40px;
+    margin: 100px;
     width: 100vw;
     display: flex;
     flex-direction: row !important;
@@ -171,7 +175,10 @@ footer {
     main.aboutMe .aboutMeSection #aboutPhoto {
       width: 30vw; }
     main.aboutMe .aboutMeSection .aboutText p {
+      padding: 0;
       max-width: 50vw; }
+  main.aboutMe h1 {
+    text-align: left !important; }
   /*Boton About*/
   .aboutButton {
     margin: 40px; }
@@ -205,7 +212,7 @@ footer {
     flex-direction: row;
     justify-content: space-evenly; }
     footer .formComplete {
-      font-size: 1rem;
+      font-size: 0.75rem;
       width: 70vw;
       display: flex;
       flex-direction: row;
@@ -220,7 +227,31 @@ footer {
       footer .formComplete .formSend {
         grid-area: formSend; }
     footer div .col span {
-      font-size: 1rem; } }
+      font-size: 0.75rem; } }
+
+/*Acá empieza el responsive desde 1024px*/
+@media screen and (min-width: 1024px) {
+  /*Nav responsive*/
+  nav a:link {
+    text-decoration: none; }
+  nav a:visited {
+    color: hwb(0 0% 0%); }
+  nav #navbarNav {
+    background-color: transparent; }
+  .custom-width-logo-nav {
+    width: 14vw !important; }
+  nav ul {
+    width: 30vw; }
+  .navContentLeft {
+    order: 1; }
+  .navContentCenter {
+    order: 2; }
+  .navContentRight {
+    order: 3; }
+  footer .formComplete {
+    font-size: 1rem; }
+  footer div .col span {
+    font-size: 1rem; } }
 
 /*Main Index*/
 main {
@@ -241,12 +272,14 @@ main.aboutMe .aboutMeSection {
   flex-direction: column;
   align-items: center;
   justify-content: space-around; }
+  main.aboutMe .aboutMeSection img {
+    width: 80vw; }
+  main.aboutMe .aboutMeSection h1 {
+    text-align: center; }
   main.aboutMe .aboutMeSection p {
     padding: 20px;
     max-width: 100vw;
     text-align: justify; }
-  main.aboutMe .aboutMeSection img {
-    width: 80vw; }
 
 /*Main Milestones*/
 main.milestones {

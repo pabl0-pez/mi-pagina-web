@@ -31,14 +31,17 @@ main.aboutMe{
     flex-direction: column;
     align-items: center;
     justify-content: space-around; 
-
+    
+    img{
+        width: 80vw;
+    }
+    h1{
+        text-align: center;
+    }
     p{
         padding: $spacing*4;
         max-width: 100vw;
         text-align: justify;
-    }
-    img{
-        width: 80vw;
     }
     }
 }

@@ -1,22 +1,10 @@
 /*Acá empieza el responsive desde 768px*/
-
 @media screen and (min-width:768px){
     /*Nav responsive*/
-    .custom-width-logo-nav{
-        width: 14vw !important;
+        .custom-width-logo-nav{
+        width: 30vw !important;
         }
-        nav ul{
-            width: 30vw;
-        }
-        .navContentLeft{
-            order: 1;
-        }
-        .navContentCenter{
-            order: 2;
-        }
-        .navContentRight{
-            order: 3;
-        }
+
     /*Body Milestones responsive 768px*/
     .bodyMilestones{
         background-image: url('../public/alien.png');
@@ -33,7 +21,7 @@
     /*Main About Me*/
     main.aboutMe{
         .aboutMeSection{
-            margin: 40px;
+            margin: 100px;
             width: 100vw;
 
             display: flex;
@@ -45,9 +33,13 @@
                 }
             .aboutText{
                 p{
+                    padding: 0;
                     max-width: 50vw;
                 }
         }
+        }
+        h1{
+            text-align: left !important;
         }
     }
     /*Boton About*/
@@ -92,7 +84,7 @@
         flex-direction: row;
         justify-content: space-evenly;
         .formComplete{
-            font-size: 1rem;
+            font-size: 0.75rem;
             width: 70vw;
 
             display: flex;
@@ -115,7 +107,7 @@
         div{
             .col{
                 span{
-                    font-size: 1rem;
+                    font-size: 0.75rem;
                 }
             }
         }
@@ -123,3 +115,41 @@
 
 
 }
+
+/*Acá empieza el responsive desde 1024px*/
+@media screen and (min-width:1024px){
+    /*Nav responsive*/
+    nav{
+        @include links;
+        #navbarNav{
+            background-color: transparent;
+        }
+    }
+    .custom-width-logo-nav{
+        width: 14vw !important;
+    }
+    nav ul{
+        width: 30vw;
+    }
+    .navContentLeft{
+        order: 1;
+    }
+    .navContentCenter{
+        order: 2;
+    }
+    .navContentRight{
+        order: 3;
+    }
+    footer{
+        .formComplete{
+            font-size: 1rem;
+        }
+        div{
+            .col{
+                span{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    }

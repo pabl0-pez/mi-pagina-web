@@ -1,6 +1,9 @@
 /*Propiedades del nav*/
 nav{
     @include links;
+    #navbarNav{
+        background-color: $color-tertiary;
+    }
 }
 /*Sobreescriben el Bootsrap*/
 .color-red{
