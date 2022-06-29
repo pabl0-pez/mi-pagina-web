@@ -1,6 +1,6 @@
 /* PROCESO: (para los primeros 3 usuarios) suscribirse al newsletter con nombre y correo electronico y recibir una camiseta o un tote bag gratis. Si el ususario escoge una camiseta debe elegir la talla, si escoge el tote no. Tambien debe escoger el lugar de residencia para calcular el tiempo de entrega */
 
-for(i=0; i<=3; i++){
+for(i=1; i<=3; i++){
     function pedirDatosUsuario (regalo){
         let nombre = prompt("Name");
         let email = prompt("Email address");
